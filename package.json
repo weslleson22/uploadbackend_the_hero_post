@@ -8,8 +8,7 @@
   },
   "engines": {
     "node": ">= 6.9.4",
-    "npm": ">= 4.4.0",
-     "start": "nodemon src/server.js"
+    "npm": ">= 4.4.0"
     
   },
   "keywords": [],
