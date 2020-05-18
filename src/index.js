@@ -1,6 +1,5 @@
 
 
-app.listen(process.env.PORT || 3333);
 
 require("dotenv").config();
 
