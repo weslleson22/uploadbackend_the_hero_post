@@ -1,4 +1,8 @@
 require ("dotenv").config();
 
 const app = require('./app');
-app.listen(process.env.PORT || 3333);
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3333;
+}
+app.listen(port);
