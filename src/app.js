@@ -12,12 +12,11 @@ app.use(routes);
 app.use(errors());
 
 module.exports = app;
-app.listen(process.env.PORT || 3000);
-
-
-
-
-
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3333;
+}
+app.listen(port);
 
 
 
