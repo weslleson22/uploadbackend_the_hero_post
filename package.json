@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "nodemon src/server.js",
     "test": "cross-env NODE_ENV=test jest"
   },
   "engines": {
     "node": ">= 6.9.4",
-    "npm": ">= 4.4.0"
+    "npm": ">= 4.4.0",
+     "start": "nodemon src/server.js"
+    
   },
   "keywords": [],
   "author": "",
