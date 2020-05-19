@@ -5,15 +5,23 @@ const cors = require ('cors');
 const {errors} = require('celebrate');
 const routes = require('./routes');
 
+const path = require('path')
+
 const app = express();
 app.use(cors({}));
 app.use(express.json());
 app.use(routes);
 app.use(errors());
 
-module.exports = app;
-app.listen(process.env.PORT || port = 3333);
 
+const PORT = process.env.PORT || 5000
+
+express()
+  .use(express.static(path.join(__dirname, 'public')))
+  .set('views', path.join(__dirname, 'views'))
+  .set('view engine', 'ejs')
+  .get('/', (req, res) => res.render('pages/index'))
+  .listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
 
 
