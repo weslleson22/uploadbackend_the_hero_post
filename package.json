@@ -8,7 +8,7 @@
   
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node src/server.js",
     "tes": "node test.js"
   },
    "engines": {
